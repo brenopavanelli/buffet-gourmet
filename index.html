@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buffet Gourmet - Seu Evento Perfeito</title>
+    <!-- Google Fonts: Playfair Display for titles, Lato for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS for utility classes and rapid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-primary-white">
+
+    <!-- Header Section -->
+    <header class="bg-primary-white border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center py-3 sm:py-4">
+                <!-- Logo -->
+                <div class="logo text-xl sm:text-2xl font-bold text-primary-black mb-2 sm:mb-0">Buffet Gourmet</div>
+                <!-- Navigation -->
+                <nav>
+                    <ul class="flex items-center space-x-4 sm:space-x-6">
+                        <li><a href="#sobre" class="text-sm sm:text-base font-semibold text-gray-700 hover:text-gold">Sobre nós</a></li>
+                        <li><a href="#orcamento" class="btn btn-outline-gold text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2">Faça seu Orçamento</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-light-gray text-center py-12 md:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary-black max-w-2xl mx-auto">Seu evento perfeito começa com um bom planejamento.</h1>
+                <p class="mt-4 sm:mt-6 text-base sm:text-lg text-gray-600 max-w-md sm:max-w-xl mx-auto">
+                    O Buffet Gourmet oferece uma experiência completa com <span class="font-bold uppercase">Sabor</span>, requinte, criatividade, conforto, segurança. Em cada evento, uma alquimia que envolve ingredientes de alta qualidade, paixão pelo que fazemos, profissionalismo, organização para o seu evento ser perfeito. Seja no cardápio, elaborado no capricho ou na apresentação, criamos eventos para serem lembrados.
+                </p>
+                <a href="#orcamento" class="btn btn-gold mt-6 sm:mt-8 text-sm sm:text-base">Saiba mais</a>
+            </div>
+        </section>
+
+        <!-- Sobre Nós Section -->
+        <section id="sobre" class="py-12 md:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+                    <!-- Text Content -->
+                    <div class="md:w-2/3">
+                        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-black mb-4 md:mb-6 text-center md:text-left">Tudo o que sua festa precisa, reunido em um só lugar!</h2>
+                        <p class="text-gray-600 mb-4 text-sm sm:text-base">
+                            O Buffet Gourmet acredita que cada evento merece ser único, especial e memorável. Combinamos ingredientes frescos e selecionados com a criatividade dos nossos chefs para criar pratos que encantam o paladar e os olhos.
+                        </p>
+                        <p class="text-gray-600 text-sm sm:text-base">
+                            Atuamos com paixão, cuidado em detalhes e um compromisso sério com a satisfação dos nossos clientes. Seja uma festa de aniversário, um casamento, um evento corporativo ou qualquer outra celebração, estamos prontos para tornar o seu sonho em realidade e surpreender.
+                        </p>
+                    </div>
+                    <!-- Contact Info Box -->
+                    <div class="w-full md:w-1/3 bg-light-gray p-6 md:p-8 rounded-lg border-l-4 border-gold mt-6 md:mt-0">
+                        <div class="text-center mb-4">
+                            <div class="text-lg sm:text-xl font-bold text-primary-black">Buffet</div>
+                            <div class="text-lg sm:text-xl font-bold text-primary-black -mt-1">Gourmet</div>
+                        </div>
+                        <p class="text-xs sm:text-sm text-gray-700 mb-2"><strong class="text-primary-black">Telefone:</strong> (XX) XXXXX-XXXX</p>
+                        <p class="text-xs sm:text-sm text-gray-700 mb-2"><strong class="text-primary-black">E-mail:</strong> contato@buffetgourmet.com</p>
+                        <p class="text-xs sm:text-sm text-gray-700"><strong class="text-primary-black">Endereço:</strong> Rua das Festas, 456 - Centro, Requintópolis - CEP 00000-000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Por que Escolher Section -->
+        <section id="porque-nos" class="bg-light-gray py-12 md:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-black text-center mb-8 md:mb-12">Por que escolher o Buffet Gourmet para o seu evento?</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
+                    <!-- Feature Item 1 -->
+                    <div class="feature-item bg-primary-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                        <div class="feature-icon-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gold mb-2">Personalização total do seu evento</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm">Adaptamos cada detalhe, do cardápio à decoração, para refletir seu estilo único e criar momentos inesquecíveis.</p>
+                    </div>
+                    <!-- Feature Item 2 -->
+                    <div class="feature-item bg-primary-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
+                        <div class="feature-icon-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gold mb-2">Praticidade no planejamento</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm">Nossa equipe experiente cuida de toda a organização, permitindo que você aproveite cada momento sem preocupações.</p>
+                    </div>
+                    <!-- Feature Item 3 -->
+                    <div class="feature-item bg-primary-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300 sm:col-span-2 md:col-span-1">
+                        <div class="feature-icon-stars">
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                            <svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></svg>
+                        </div>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gold mb-2">Qualidade gastronômica impecável</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm">Ingredientes frescos, pratos elaborados por chefs renomados, garantindo uma experiência de sabor excepcional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Orçamento Section -->
+        <section id="orcamento" class="pb-10 pt-12 md:pt-20 md:pb-12"> 
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-black text-center mb-8 md:mb-12">Solicite seu Orçamento</h2>
+                <!--
+                    IMPORTANTE: Substitua "SEU_ENDPOINT_DO_FORMSPREE_AQUI"
+                    pelo endpoint URL fornecido pelo Formspree para o seu formulário.
+                    Exemplo: action="https://formspree.io/f/xxxxxxxx"
+                -->
+                <form id="formOrcamento"
+                      action="https://formspree.io/f/xldndgzn" 
+                      method="POST"
+                      class="max-w-3xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <!-- Left Column Fields -->
+                        <div class="w-full md:w-1/2 space-y-4 sm:space-y-5">
+                            <div>
+                                <label for="nome" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Nome completo</label>
+                                <input type="text" id="nome" name="nome" required class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 text-sm sm:text-base">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">E-mail (para contato)</label>
+                                <input type="email" id="email" name="_replyto" required class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 text-sm sm:text-base">
+                            </div>
+                            <div>
+                                <label for="telefone" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" required class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 text-sm sm:text-base">
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+                                <div>
+                                    <label for="tipoEvento" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Tipo de evento</label>
+                                    <select id="tipoEvento" name="tipoEvento" class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 text-sm sm:text-base">
+                                        <option value="">Selecione</option>
+                                        <option value="casamento">Casamento</option>
+                                        <option value="aniversario">Aniversário</option>
+                                        <option value="corporativo">Corporativo</option>
+                                        <option value="debutante">Debutante</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="dataEvento" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Data do evento</label>
+                                    <input type="date" id="dataEvento" name="dataEvento" class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 text-sm sm:text-base">
+                                </div>
+                            </div>
+                             <div>
+                                <label for="numConvidados" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Nº de Convidados</label>
+                                <input type="number" id="numConvidados" name="numConvidados" min="1" class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 text-sm sm:text-base">
+                            </div>
+                        </div>
+                        <!-- Right Column Message -->
+                        <div class="w-full md:w-1/2 mt-4 md:mt-0">
+                            <label for="mensagem" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Mensagem Adicional</label>
+                            <textarea id="mensagem" name="mensagem" rows="10" class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 resize-none text-sm sm:text-base"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center mt-6 sm:mt-8">
+                        <button type="submit" class="btn btn-gold text-sm sm:text-base">Enviar solicitação de orçamento</button>
+                    </div>
+                </form>
+            </div>
+        </section> <!-- Fim da Seção Orçamento -->
+
+        <!-- Nova Seção: Contato Direto por E-mail -->
+        <section id="contato-direto" class="bg-primary-white py-12 md:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-black mb-4 md:mb-6">Prefere um Contato Mais Direto?</h2>
+                <p class="text-gray-600 max-w-xl sm:max-w-2xl mx-auto mb-6 md:mb-8 text-sm sm:text-base">
+                    Entendemos que cada evento é único e, por vezes, você pode preferir descrever suas necessidades e ideias com mais detalhes diretamente por e-mail. Nossa equipe está pronta para oferecer um atendimento personalizado e transformar sua visão em realidade.
+                </p>
+
+                <div class="mb-6 md:mb-8">
+                    <p class="text-gray-700 mb-2 text-sm sm:text-base">Copie nosso e-mail corporativo e envie sua mensagem:</p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center">
+                        <span id="corporateEmail" class="text-base sm:text-lg font-semibold text-gold bg-light-gray px-3 py-2 sm:px-4 sm:py-2 rounded-md sm:rounded-l-md sm:rounded-r-none mb-2 sm:mb-0 w-full sm:w-auto">buffetgourmet@contato.com</span>
+                        <button id="copyEmailButton" class="btn btn-copy rounded-md sm:rounded-r-md sm:rounded-l-none w-full sm:w-auto text-xs sm:text-sm">
+                            Copiar E-mail
+                        </button>
+                        <span id="copyFeedback" class="copy-feedback mt-1 sm:mt-0 sm:ml-3">Copiado!</span>
+                    </div>
+                </div>
+
+                <div class="max-w-xl sm:max-w-3xl mx-auto text-left bg-light-gray p-4 sm:p-6 md:p-8 rounded-lg">
+                    <h3 class="text-lg sm:text-xl font-semibold text-primary-black mb-3 sm:mb-4 text-center md:text-left">O que incluir no seu e-mail?</h3>
+                    <p class="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm">
+                        Para nos ajudar a elaborar uma proposta que atenda perfeitamente às suas expectativas, sugerimos incluir algumas informações iniciais:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1.5 sm:space-y-2 mb-4 sm:mb-6 text-xs sm:text-sm">
+                        <li><strong>Tipo de evento:</strong> (Ex: Casamento, Aniversário de 15 anos, Evento Corporativo, Confraternização)</li>
+                        <li><strong>Data desejada ou período:</strong> (Flexibilidade pode abrir mais opções!)</li>
+                        <li><strong>Estimativa do número de convidados:</strong> (Ex: 50-70 pessoas, 100+ pessoas)</li>
+                        <li><strong>Local do evento:</strong> (Se já possui um local ou se busca sugestões)</li>
+                        <li><strong>Suas ideias e inspirações:</strong> (Temas, estilos de decoração, preferências gastronômicas)</li>
+                        <li><strong>Serviços de interesse:</strong> (Ex: Buffet completo, Apenas coquetel, Mesa de doces, Bar de drinks)</li>
+                    </ul>
+                    <p class="text-gray-700 font-semibold text-center text-xs sm:text-sm">
+                        Quanto mais detalhes você nos fornecer, mais assertivos seremos na criação do seu evento dos sonhos!
+                    </p>
+                </div>
+                 <p class="mt-6 sm:mt-8 text-gray-600 text-sm sm:text-base">
+                    Estamos ansiosos para receber seu contato e começar a planejar um momento inesquecível juntos!
+                </p>
+            </div>
+        </section>
+        <!-- Fim da Nova Seção: Contato Direto por E-mail -->
+
+
+        <!-- Valores Section -->
+        <section id="valores" class="bg-light-gray py-12 md:py-20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-black text-center mb-8 md:mb-12">Seu evento merece o melhor – e a gente entrega!</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8">
+                    <!-- Valor Item 1 -->
+                    <div class="valor-item text-center">
+                        <img src="https://cms-cdn.saipos.com/assets/2024/08/08/Tamanho-Banner-HTML-39-1_uid_66b4c17a572ba.png" alt="Mãos de garçom servindo prato elegante" class="valor-imagem mx-auto mb-2 sm:mb-4">
+                        <p class="font-semibold text-primary-black text-xs sm:text-sm md:text-base">Serviço de Excelência</p>
+                    </div>
+                    <!-- Valor Item 2 -->
+                    <div class="valor-item text-center">
+                        <img src="https://delikatessenbuffet.com.br/storage/app/uploads/8FjVa7ePdlvFRZNBUkI1oJuAuCAYy47k1jUHTFBU.jpg" alt="Prato gourmet com camarões e decoração sofisticada" class="valor-imagem mx-auto mb-2 sm:mb-4">
+                        <p class="font-semibold text-primary-black text-xs sm:text-sm md:text-base">Sabores Inigualáveis</p>
+                    </div>
+                    <!-- Valor Item 3 -->
+                    <div class="valor-item text-center">
+                        <img src="https://revista.icasei.com.br/wp-content/uploads/2018/07/decoracao_para_casamento_classico.jpg" alt="Salão de festas elegantemente decorado para casamento" class="valor-imagem mx-auto mb-2 sm:mb-4">
+                        <p class="font-semibold text-primary-black text-xs sm:text-sm md:text-base">Ambientes Sofisticados</p>
+                    </div>
+                    <!-- Valor Item 4 -->
+                    <div class="valor-item text-center">
+                        <img src="https://s2.glbimg.com/-IIDIjQ7GeSqcyVraIz38ATt2gI=/e.glbimg.com/og/ed/f/original/2016/02/12/0593b.jpg" alt="Casal brindando em uma festa de casamento" class="valor-imagem mx-auto mb-2 sm:mb-4">
+                        <p class="font-semibold text-primary-black text-xs sm:text-sm md:text-base">Memórias Duradouras</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-black text-primary-white py-8 sm:py-10 text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-xs sm:text-sm">&copy; <span id="currentYear"></span> Buffet Gourmet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
