@@ -1,11 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    // Smooth scroll for anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = anchor.getAttribute('href');
-            // Ensure it's not just a "#" link
             if (href.length > 1 && document.querySelector(href)) {
                 e.preventDefault();
                 document.querySelector(href).scrollIntoView({
@@ -15,22 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Budget form validation
     const formOrcamento = document.getElementById('formOrcamento');
     if (formOrcamento) {
         formOrcamento.addEventListener('submit', function(e) {
-            // Validação dos campos obrigatórios
             const nomeInput = document.getElementById('nome');
-            const emailInput = document.getElementById('email'); // O ID continua "email"
+            const emailInput = document.getElementById('email'); 
             const telefoneInput = document.getElementById('telefone');
 
             let isValid = true;
             let errorMessages = [];
 
-            // Reset previous error styles
             [nomeInput, emailInput, telefoneInput].forEach(input => {
-                input.classList.remove('border-red-500'); // Assuming Tailwind class for error
-                input.classList.add('border-gray-300'); // Assuming Tailwind class for normal
+                input.classList.remove('border-red-500');
+                input.classList.add('border-gray-300'); 
             });
 
             if (nomeInput.value.trim() === '') {
@@ -56,9 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             if (!isValid) {
-                e.preventDefault(); // Impede o envio do formulário se a validação falhar
+                e.preventDefault(); 
 
-                // Custom modal for error messages
                 const errorModal = document.createElement('div');
                 errorModal.innerHTML = `
                     <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; z-index: 1000; padding: 1rem;">
@@ -77,23 +71,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     errorModal.remove();
                 });
             }
-            // Se isValid for true, o formulário será enviado normalmente para o endpoint do Formspree
         });
     }
 
-    // Helper function to validate email (simple regex)
     function isValidEmail(email) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
 
-    // Update copyright year in the footer
     const currentYearSpan = document.getElementById('currentYear');
     if (currentYearSpan) {
         currentYearSpan.textContent = new Date().getFullYear();
     }
 
-    // Click and Copy functionality for corporate email
     const copyEmailButton = document.getElementById('copyEmailButton');
     const corporateEmailSpan = document.getElementById('corporateEmail');
     const copyFeedbackSpan = document.getElementById('copyFeedback');
