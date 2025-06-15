@@ -91,14 +91,15 @@ function showModal(type, messages = []) {
                 <button id="closeModal" class="btn btn-gold">Ok, entendi!</button>
             </div>
         `;
-    } else { // 'error'
+    } else { 
         modalContentHTML = `
             <div class="modal-content !border-t-red-500">
-                <h3 class="text-2xl font-bold text-red-500 mb-3">Ocorreu um Erro</h3>
+                <h3 class="text-2xl font-bold text-primary-black mb-3">Ops! Algo deu errado</h3>
+                <p class="text-gray-600 mb-6">Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.</p>
                 <ul class="list-disc list-inside text-left text-gray-600 space-y-2 mb-6">
                     ${messages.map(msg => `<li>${msg}</li>`).join('')}
                 </ul>
-                <button id="closeModal" class="btn btn-gold">Tentar Novamente</button>
+                <button id="closeModal" class="btn btn-gold">Voltar</button>
             </div>
         `;
     }
