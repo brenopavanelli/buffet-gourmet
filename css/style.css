@@ -214,7 +214,7 @@ html {
     padding: 2rem 2.5rem;
     border-radius: 8px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    border-top: 5px solid #B08D57; /* Borda dourada no topo */
+    /* border-top: 5px solid #B08D57; Borda dourada no topo */
     text-align: center;
     max-width: 90%;
     width: 450px;
@@ -231,52 +231,42 @@ html {
     margin: 0 auto 1.5rem auto;
 }
 
-.checkmark {
+/* === Estilos para o Ícone de Sucesso Refatorado === */
+
+/* O container principal que se torna o círculo dourado */
+.success-icon {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    display: block;
-    stroke-width: 3;
-    stroke: #B08D57; /* Cor dourada para o traço */
-    stroke-miterlimit: 10;
-    box-shadow: inset 0px 0px 0px #B08D57;
-    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    background-color: #B08D57; /* O círculo agora é um background simples */
+    display: flex;
+    justify-content: center; /* Centraliza o SVG filho horizontalmente */
+    align-items: center; /* Centraliza o SVG filho verticalmente */
+    margin: 0 auto 1.5rem auto;
 }
 
-.checkmark__circle {
-    stroke-dasharray: 166;
-    stroke-dashoffset: 166;
-    stroke-width: 3;
-    stroke-miterlimit: 10;
-    stroke: #B08D57;
-    fill: none;
-    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+/* O SVG que contém apenas o caminho do check */
+.checkmark-svg {
+    width: 60%; /* Ocupa 60% do container de 80px (~48px), para um bom tamanho visual */
+    height: auto;
 }
 
+/* A path do check, com sua animação de desenho preservada */
 .checkmark__check {
-    transform-origin: 50% 50%;
     stroke-dasharray: 48;
     stroke-dashoffset: 48;
-    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    stroke: #FFFFFF; /* O check é branco para contrastar com o fundo dourado */
+    stroke-width: 4; /* Um pouco mais grosso para melhor visibilidade */
+    stroke-linecap: round; /* Deixa as pontas do check arredondadas */
+    stroke-miterlimit: 10;
+    fill: none;
+    /* A animação de desenho do check foi mantida */
+    animation: stroke 0.4s cubic-bezier(0.65, 0, 0.45, 1) 0.2s forwards;
 }
 
+/* A animação que desenha o traço permanece a mesma */
 @keyframes stroke {
     100% {
         stroke-dashoffset: 0;
-    }
-}
-
-@keyframes scale {
-    0%, 100% {
-        transform: none;
-    }
-    50% {
-        transform: scale3d(1.1, 1.1, 1);
-    }
-}
-
-@keyframes fill {
-    100% {
-        box-shadow: inset 0px 0px 0px 40px #B08D57;
     }
 }
