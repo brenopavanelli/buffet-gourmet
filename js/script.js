@@ -99,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function() {
             
             try {
                 document.execCommand('copy'); 
-                copyFeedbackSpan.classList.add('visible');
                 copyEmailButton.textContent = 'Copiado!';
 
                 setTimeout(() => {
