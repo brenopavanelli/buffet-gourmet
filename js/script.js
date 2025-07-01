@@ -148,7 +148,6 @@ function showModal(type, messages = []) {
             
             try {
                 document.execCommand('copy'); 
-                copyFeedbackSpan.classList.add('visible');
                 copyEmailButton.textContent = 'Copiado!';
 
                 setTimeout(() => {
