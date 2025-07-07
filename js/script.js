@@ -2,16 +2,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     anchorLinks.forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = anchor.getAttribute('href');
-            if (href.length > 1 && document.querySelector(href)) {
-                e.preventDefault();
-                document.querySelector(href).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
+    anchor.addEventListener('click', function (e) {
+        const href = anchor.getAttribute('href');
+        const targetElement = document.querySelector(href);
+
+        if (href.length > 1 && targetElement) {
+            e.preventDefault();
+
+            const header = document.getElementById('main-header');
+            const headerHeight = header ? header.offsetHeight : 0;
+           
+
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = targetPosition - headerHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
     });
+});
 
         // Budget form submission with AJAX
     const formOrcamento = document.getElementById('formOrcamento');
