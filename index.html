@@ -13,10 +13,10 @@
 </head>
 <body class="bg-primary-white">
 
-    <header class="bg-primary-white border-b border-gray-200">
+    <header id="main-header" class="bg-primary-white border-b border-gray-200">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col sm:flex-row justify-between items-center py-3 sm:py-4">
-                <div class="logo text-xl sm:text-2xl font-bold text-primary-black mb-2 sm:mb-0">Buffet Gourmet</div>
+            <div class="flex flex-col sm:flex-row justify-between items-center py-2 sm:py-2">
+                <div class="logo"><a href="#hero"><img src="assets/images/logo-buffet-gourmet.png" alt="Buffet Gourmet Logo"></a></div>
                 <nav>
                     <ul class="flex items-center space-x-4 sm:space-x-6">
                         <li><a href="#sobre" class="text-sm sm:text-base font-semibold text-gray-700 hover:text-gold">Sobre nós</a></li>
@@ -112,7 +112,7 @@
                       method="POST"
                       class="max-w-3xl mx-auto">
                     <div class="flex flex-col md:flex-row gap-6">
-                        <div class="w-full md:w-1/2 space-y-4 sm:space-y-5">
+                        <div class="w-full md:w-1/2 space-y-4 sm:space-y-4">
                             <div>
                                 <label for="nome" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Nome completo</label>
                                 <input type="text" id="nome" name="nome" required class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 text-sm sm:text-base">
@@ -149,7 +149,7 @@
                         </div>
                         <div class="w-full md:w-1/2 mt-4 md:mt-0">
                             <label for="mensagem" class="block text-xs sm:text-sm font-medium text-primary-black mb-1">Mensagem Adicional</label>
-                            <textarea id="mensagem" name="mensagem" rows="10" class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 resize-none text-sm sm:text-base"></textarea>
+                            <textarea id="mensagem" name="mensagem" rows="16" class="w-full p-2 sm:p-3 border border-gray-300 rounded-md focus:border-gold focus:ring-gold focus:ring-opacity-50 resize-none text-sm sm:text-base"></textarea>
                         </div>
                     </div>
                     <div class="text-center mt-6 sm:mt-8">
