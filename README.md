@@ -53,7 +53,7 @@ O principal objetivo é aplicar e demonstrar conhecimentos em desenvolvimento we
 
 ![Static Badge](https://img.shields.io/badge/Status-Conclu%C3%ADdo-green)
 
-O projeto encontra-se finalizado em sua versão 1.0.0, com todas as funcionalidades propostas implementadas e testadas.
+O projeto encontra-se finalizado em sua versão 1.2.1, com todas as funcionalidades propostas implementadas e testadas.
 
 ---
 
